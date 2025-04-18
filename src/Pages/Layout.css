@@ -1,0 +1,249 @@
+/* Layout.css */
+
+/* General styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #C1D0B5; /* Light grayish background for the page */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar custom styles */
+.navbar {
+  background-color: #99A98F; /* Slightly darker shade of yellow for contrast */
+}
+
+.navbar-brand {
+  color: #333 ;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none; /* Remove underline on nav links */
+}
+
+i {
+  font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #343a40; /* Darker color on hover */
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+.navbar-toggler {
+  border-color: #333;
+  text-decoration: none;
+}
+
+.navbar-toggler-icon {
+  background-color:#99A98F; 
+}
+
+/* Offcanvas styles */
+.offcanvas {
+  background-color:#C1D0B5; 
+  color: white;
+  width: 250px;
+}
+
+.offcanvas-header {
+  background-color:#C1D0B5; 
+}
+
+.offcanvas-title {
+  color: white;
+}
+
+.offcanvas-body {
+  padding: 20px;
+  background-color:#99A98F; /* Matching background with offcanvas */
+}
+
+.offcanvas ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.offcanvas ul li {
+  margin-bottom: 10px;
+}
+
+.offcanvas ul li a {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.offcanvas ul li a:hover {
+  color: #343a40; /* Dark color on hover for links */
+}
+
+/* Search bar styles */
+form.d-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-control {
+  width: 250px;
+}
+
+li i:hover {
+  color: black;
+}
+
+.btn {
+   border-color: red;
+  color: black;
+  margin-top: 4px;
+}
+
+.btn:hover {
+  background-color: #ffcc00; /* Light yellow on button hover */
+  border-color: white;
+  color: white;
+}
+
+/* Media queries for responsive layout */
+@media (max-width: 768px) {
+  /* Adjust navbar links for smaller screens */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+  }
+}
+.navbar-toggler:hover{
+color: #343a40;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+}
+.navbar-toggler {
+  border-color: #333; /* Keep the dark border color */
+}
+
+.navbar-toggler:hover {
+  color: #343a40; /* Dark gray color when hovered */
+  background-color: transparent; /* Remove the background color change on hover */
+  border-color: #333; /* Keep the dark border color */
+}
+h1 {
+  text-align: center;
+}
+
+footer {
+  background-color: #343a40; /* Dark background to match offcanvas and navbar */
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Footer sections */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+  height: 300px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffcc00; /* Yellow text color to match the layout theme */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ffcc00; /* Matching hover color for links */
+}
+
+.footer-section img {
+  height: 400px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+/* Contact Info */
+.footer-section p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Social Media Icons */
+.ficon {
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+.ficon a {
+  text-decoration: none;
+  margin-right: 15px;
+  color: #fff;
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.ficon a:hover {
+  transform: scale(1.1);
+  color: #ffcc00; /* Hover effect with yellow matching theme */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #555;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section img {
+    height: auto;
+    width: 80%;
+  }
+}

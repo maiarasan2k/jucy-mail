@@ -1,0 +1,8 @@
+/* General footer styling */
+
+.carousel-control-prev:hover{
+  background: none;
+}
+.carousel-control-next:hover{
+  background: none;
+} 
